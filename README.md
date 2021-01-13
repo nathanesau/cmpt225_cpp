@@ -12,11 +12,9 @@ Spring 2021
 
 ## Development Instructions
 
-Compile instructions (NOTE: cmake must be in path):
+Compile instructions to be run in directory containing ``CMakeLists.txt``:
 
 ```bash
-# build the program
-cd lectures/lecture01
 mkdir build && cd build
 cmake .. && cmake --build .
 
