@@ -3,3 +3,6 @@ build
 
 # rust files
 target
+
+# editor files
+.vscode/launch.json
