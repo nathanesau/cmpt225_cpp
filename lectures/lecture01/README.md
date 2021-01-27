@@ -5,3 +5,9 @@ helloworld sample output:
 ```bash
 hello world
 ```
+
+helloworld_rust sample output:
+
+```bash
+hello world
+```

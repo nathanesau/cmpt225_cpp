@@ -10,6 +10,13 @@ Cow: Color = Pink Name = name2 Weight = 158 says moo
 Dog: Breed = Shepherd Color = Gold Name = name5 says woof-woof
 ```
 
+animals_rust sample output:
+
+```bash
+Cow: Cow: Color = Pink, Name = Bob, Weight = 10 
+Dog: Dog: Breed = Poodle, Color = White, Name = Spot 
+```
+
 geometricshapes sample output:
 
 ```bash
