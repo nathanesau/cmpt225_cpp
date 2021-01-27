@@ -32,6 +32,12 @@ Square: top-left=(3,94), length = 35
 Circle: center=(73,33), radius = 22
 ```
 
+geometricshapes_rust sample output:
+
+```bash
+
+```
+
 personstudents sample output:
 
 ```bash
@@ -40,4 +46,10 @@ Huck Finn
 Name = Huck Finn; ID = 456; Average grade = 0.000000
 Name = Huck Finn; ID = 456
 Name = Huck Finn; ID = 456; Average grade = 0.000000
+```
+
+personstudents_rust sample output:
+
+```bash
+
 ```
