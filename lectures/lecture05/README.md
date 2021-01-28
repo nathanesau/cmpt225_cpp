@@ -15,6 +15,15 @@ unsorted array:
 found element at index: 2
 ```
 
+searchsort_rust sample output:
+
+```
+found at index 2
+found at index 3
+unsorted array [5, 1, 3, 9, 7]
+sorted array [1, 3, 5, 7, 9]
+```
+
 staticvars sample output:
 
 ```
