@@ -1,8 +1,10 @@
-# Lecture05 code samples (C++)
+# Lecture05 code samples
+
+# C++
 
 searchsort sample output:
 
-```
+```bash
 unsorted array:
 41 467 334 500 169 724 478 358 962 464 
 sorted array:
@@ -15,31 +17,16 @@ unsorted array:
 found element at index: 2
 ```
 
-searchsort_rust sample output:
-
-```
-found at index 2
-found at index 3
-unsorted array [5, 1, 3, 9, 7]
-sorted array [1, 3, 5, 7, 9]
-```
-
 staticvars sample output:
 
-```
+```bash
 created bicycles: 11
 created bicycles: 21
 ```
 
-staticvars_rust sample output:
-
-```
-
-```
-
 comparableclasses sample output:
 
-```
+```bash
 unsorted list:
 id = 0, name = ABC
 id = 1, name = ABC
@@ -55,9 +42,28 @@ id = 2, name = ABC
 id = 2, name = ABC
 ```
 
+## Rust
+
+searchsort_rust sample output:
+
+```bash
+found at index 2
+found at index 3
+unsorted array [5, 1, 3, 9, 7]
+sorted array [1, 3, 5, 7, 9]
+```
+
+staticvars_rust sample output:
+
+```bash
+static variable before: 0
+static variable after: 20
+x after: 10
+```
+
 comparableclasses_rust sample output:
 
-```
+```bash
 unsorted list: [ComparableClass { id: 0, name: "ABC" }, ComparableClass { id: 1, name: "ABC" }, ComparableClass { id: 2, name: "XYZ" }, ComparableClass { id: 1, name: "XYZ" }, ComparableClass { id: 2, name: "ABC" }]
 sorted list: [ComparableClass { id: 0, name: "ABC" }, ComparableClass { id: 1, name: "ABC" }, ComparableClass { id: 1, name: "XYZ" }, ComparableClass { id: 2, name: "ABC" }, ComparableClass { id: 2, name: "XYZ" }]
 ```

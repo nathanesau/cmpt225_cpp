@@ -1,4 +1,6 @@
-# Lecture02 code samples (C++)
+# Lecture02 code samples
+
+## C++
 
 animals sample output:
 
@@ -8,13 +10,6 @@ Dog: Breed = Spaniel Color = Blue Name = name0 says woof-woof
 Dog: Breed = Shepherd Color = Gold Name = name24 says woof-woof
 Cow: Color = Pink Name = name2 Weight = 158 says moo
 Dog: Breed = Shepherd Color = Gold Name = name5 says woof-woof
-```
-
-animals_rust sample output:
-
-```bash
-Cow: Cow: Color = Pink, Name = Bob, Weight = 10 
-Dog: Dog: Breed = Poodle, Color = White, Name = Spot 
 ```
 
 geometricshapes sample output:
@@ -32,12 +27,6 @@ Square: top-left=(3,94), length = 35
 Circle: center=(73,33), radius = 22
 ```
 
-geometricshapes_rust sample output:
-
-```bash
-
-```
-
 personstudents sample output:
 
 ```bash
@@ -48,8 +37,32 @@ Name = Huck Finn; ID = 456
 Name = Huck Finn; ID = 456; Average grade = 0.000000
 ```
 
+## Rust
+
+animals_rust sample output:
+
+```bash
+Cow: Cow: Color = Pink, Name = Bob, Weight = 10 
+Dog: Dog: Breed = Poodle, Color = White, Name = Spot 
+```
+
+
+geometricshapes_rust sample output:
+
+```bash
+circle
+rectangle
+square
+```
+
 personstudents_rust sample output:
 
 ```bash
-
+Printing gender for students
+male
+female
+Printing students
+Huck Finn
+Susan Turner
+grades: [90, 80], average: 85
 ```

@@ -1,8 +1,10 @@
-# Lecture07 code samples (C++)
+# Lecture07 code samples
+
+## C++
 
 usingstreams sample output:
 
-```
+```bash
 Print using raw loop: 
 1
 2
@@ -53,4 +55,12 @@ Filter powers of two that are greater than 10:
 256
 512
 1024
+```
+
+## Rust
+
+usingstreams_rust sample output:
+
+```bash
+filtered_vec: [16, 32]
 ```

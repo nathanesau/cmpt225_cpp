@@ -1,3 +1,3 @@
-# Lecture04 code samples (C++)
+# Lecture04 code samples
 
-no new code samples.
+no code samples.
