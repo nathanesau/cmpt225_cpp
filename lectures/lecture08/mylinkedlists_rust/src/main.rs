@@ -15,8 +15,8 @@ struct Node {
 impl Node {
     pub fn new(data: i32, next: Option<Box<Node>>) -> Node {
         Node {
-            data: data,
-            next: next
+            data,
+            next
         }
     }
 }
@@ -49,10 +49,16 @@ impl List {
         // this->head = node_ptr->next;
         // return node_ptr->data;
         let node = self.head.take();
-        node.map(|node_ptr| {
-            self.head = node_ptr.next;
-            node_ptr.data
-        })
+        match node {
+            Some(node_ptr) => {
+                self.head = node_ptr.next;
+                return Some(node_ptr.data)
+            },
+            None => {
+                self.head = None;
+                return None
+            },
+        }
     }
 }
 
@@ -82,8 +88,15 @@ fn main() {
     list.push(3);
 
     // Check normal removal
-    assert_eq!(list.pop(), Option::Some(3));
-    assert_eq!(list.pop(), Option::Some(2));
+    match list.pop() {
+        None => println!("list.pop(): None"),
+        Some(value) => println!("list.pop(): {}", value)
+    };
+    
+    match list.pop() {
+        None => println!("list.pop(): None"),
+        Some(value) => println!("list.pop(): {}", value)
+    };
 
     // Push some more just to make sure nothing's corrupted
     list.push(4);
