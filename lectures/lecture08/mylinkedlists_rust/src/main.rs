@@ -1,70 +1,71 @@
-// https://rust-unofficial.github.io/too-many-lists/first-final.html
-use std::mem;
+// https://rust-unofficial.github.io/too-many-lists/second-final.html
+// general comment: think about rust linkedlist as C++ impl using unique_ptr
+// this will make the code easier to understand
 
+// similar to
+// Node {
+//     int data;
+//     std::unique_ptr<Node> next; 
+// };
 struct Node {
     data: i32,
-    next: NodePtr,
+    next: Option<Box<Node>>,
 }
 
-enum NodePtr {
-    Empty,
-    More(Box<Node>),
+impl Node {
+    pub fn new(data: i32, next: Option<Box<Node>>) -> Node {
+        Node {
+            data: data,
+            next: next
+        }
+    }
 }
 
+// similar to
+// List {
+//     std::unique_ptr<Node> head;
+// }
 pub struct List {
-    head: NodePtr,
+    head: Option<Box<Node>>,
 }
 
 impl List {
     pub fn new() -> Self {
-        List {
-            head: NodePtr::Empty,
-        }
+        List { head: None }
     }
 
     pub fn push(&mut self, data: i32) {
-        // push to front
-        //
-        // ex. [1, 3] becomes [5, 1, 3]
-        //
-        // - set node [ex. 5]
-        // - set node next [ex. 1]
-        // - set head to node [ex. 5]
-        let node = Box::new(Node {
-            data: data,
-            next: mem::replace(&mut self.head, NodePtr::Empty),
-        });
-
-        self.head = NodePtr::More(node);
+        // similar to
+        // auto next = std::make_unique(5, std::move(this->head));
+        // this->head = next;
+        let node = Box::new(Node::new(data, self.head.take()));
+        self.head = Some(node);
     }
 
     pub fn pop(&mut self) -> Option<i32> {
-        // pop from front
-        //
-        // ex. [5, 1,3] becomes [1, 3]
-        //
-        // case 1: head is empty (return Option::None)
-        // case 2: head is non-empty (return head data, set head to next)
-        match mem::replace(&mut self.head, NodePtr::Empty) {
-            NodePtr::Empty => Option::None,
-            NodePtr::More(node) => {
-                self.head = node.next;
-                Some(node.data)
-            }
-        }
+        // similar to
+        // auto node = std::move(this->head);
+        // auto node_ptr = node.get();
+        // this->head = node_ptr->next;
+        // return node_ptr->data;
+        let node = self.head.take();
+        node.map(|node_ptr| {
+            self.head = node_ptr.next;
+            node_ptr.data
+        })
     }
 }
 
 impl Drop for List {
     fn drop(&mut self) {
-        // drop all elements
-        //
-        // first get head
-        // then continually get next until it is empty
-        let mut node = mem::replace(&mut self.head, NodePtr::Empty);
-
-        while let NodePtr::More(mut bnode) = node {
-            node = mem::replace(&mut bnode.next, NodePtr::Empty);
+        // similar to
+        // auto node = std::move(this->head);
+        // while (node) {
+        //    node = std::move(node->next);
+        // }
+        let mut node = self.head.take();
+        while let Some(mut boxed_node) = node {
+            node = boxed_node.next.take();
         }
     }
 }
