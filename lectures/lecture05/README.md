@@ -31,6 +31,12 @@ created bicycles: 11
 created bicycles: 21
 ```
 
+staticvars_rust sample output:
+
+```
+
+```
+
 comparableclasses sample output:
 
 ```
@@ -47,4 +53,11 @@ id = 1, name = ABC
 id = 1, name = XYZ
 id = 2, name = ABC
 id = 2, name = ABC
+```
+
+comparableclasses_rust sample output:
+
+```
+unsorted list: [ComparableClass { id: 0, name: "ABC" }, ComparableClass { id: 1, name: "ABC" }, ComparableClass { id: 2, name: "XYZ" }, ComparableClass { id: 1, name: "XYZ" }, ComparableClass { id: 2, name: "ABC" }]
+sorted list: [ComparableClass { id: 0, name: "ABC" }, ComparableClass { id: 1, name: "ABC" }, ComparableClass { id: 1, name: "XYZ" }, ComparableClass { id: 2, name: "ABC" }, ComparableClass { id: 2, name: "XYZ" }]
 ```
