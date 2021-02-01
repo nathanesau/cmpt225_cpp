@@ -15,6 +15,7 @@ C++ implementations for CMPT225 lecture slides at Simon Fraser University (Sprin
 | Lecture 07 | Yes (different repo) | Yes | Yes | No |
 | Lecture 08 | Yes (different repo)  | Yes | Yes | No |
 | Lecture 09 | Yes (different repo) | No | No | Yes |
+| Lecture 10 | Yes (different report) | No | No | Yes |
 
 General Language Thoughts:
 
