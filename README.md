@@ -41,3 +41,8 @@ cmake .. && cmake --build .
 # run the program
 "Debug/main.exe"
 ```
+
+## Project Thoughts
+
+* Writing AI for rush hour (use graph data structures, etc?)
+* Implementing execution stack for recursive calls (low priority, done in typical OS class)
