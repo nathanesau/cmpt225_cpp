@@ -10,5 +10,5 @@ queue2 after pop: 10
 list1 before pop_front: 10 5 
 list1 after pop_front: 5 
 list2 before pop_front: 10 5 
-list2 after pop_front: 5
+list2 after pop_front: 5 
 ```

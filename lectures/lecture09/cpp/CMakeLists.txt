@@ -10,4 +10,6 @@ add_executable(main
     src/node.cpp
     src/queue.h
     src/queue.cpp
+    src/stack.h
+    src/stack.cpp
 )
