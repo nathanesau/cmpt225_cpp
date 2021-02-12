@@ -8,9 +8,17 @@ helloworld sample output:
 hello world
 ```
 
+## Java
+
+helloworld sample output:
+
+```bash
+Hello World!
+```
+
 ## Rust
 
-helloworld_rust sample output:
+helloworld sample output:
 
 ```bash
 hello world

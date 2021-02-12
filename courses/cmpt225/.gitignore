@@ -1,0 +1,6 @@
+.VSCodeCounter
+
+# java files
+.project
+*.prefs
+.classpath
