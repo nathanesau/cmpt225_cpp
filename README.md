@@ -1,4 +1,4 @@
-# cmpt225_cpp
+# Data Structures and Algorithms
 
 C++ implementations for CMPT225 lecture slides at Simon Fraser University (Spring 2021).
 
