@@ -2,4 +2,4 @@
 
 We discussed Big-O notation.
 
-No code this time.
+I prepared some LaTeX slides for this lecture.

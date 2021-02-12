@@ -1,0 +1,126 @@
+% download perl: 
+% https://cli-msi.s3.amazonaws.com/ActivePerl-5.28.msi
+% download miktex:
+% https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-21.1-x64.exe
+% download latex workskop
+% https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newtheorem{definition}{Definition}
+
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\section{Big-O Notation}
+
+This document contains some basic proofs related to Big-O Notation.
+
+\subsection{Introduction}
+
+\begin{itemize}
+\item We use Big-O notation to express the amount of resources used by algorithms (time complexity and space complexity).
+\item Denote by $f(N)$ the running time of a program for inputs of size $N$.
+\begin{itemize}
+\item Ex 1. $f(x) = 1.5N^2 + 4N + 3$
+\item Ex 2. $f(x) = 2N^4 + 10N^3 + 4N^2 + 900log(N) + 3000$
+\item Ex 3. $f(x) = 2N - 100$ for $(N > 10)$
+\end{itemize}
+\item The Big-O notiation will be the fastest increasing term for large inputs.
+\end{itemize}
+
+For example: if $f(N) = 2N^4 + 10N^3 + 4N^2 + 900log(N) + 3$ then the time complexity is $O(N^4)$.
+
+\subsection{Why are we ignoring low order terms?}
+
+Because they become negligible as $N$ grows.
+
+For example: if $f(N) = 4N^4 + 100N^3 + 9000N^2 + N$.
+
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+& $4N^4$ & $100N^3$ & $9000N^2$ & $N$ \\ \hline
+$N=100$ & $4 \times 10^8$ & $10^8$ & $9 \times 10^7$ & 100 \\ \hline
+$N=10^8$ & $4 \times 10^{32}$ & $10^{26}$ & $9 \times 10^{19}$ & $10^8$ \\ \hline
+$N=10^{12}$ & $4 \times 10^{48}$ & $10^{38}$ & $9 \times 10^{27}$ & $10^{12}$ \\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Why are we ignoring multiplicative constants?}
+
+Because if we buy a computer that runs twice as fast or a computer with 4 cores, then the running time decreases accordingly.
+
+But it will not change the order of magnitude.
+
+In practice, constants do matter!
+
+In theory, we ignore them.
+
+\subsection{Formal Definition}
+
+\begin{definition}
+Let $f(N)$ and $g(N)$ be two functions on positive integers.
+
+We say that $f = O(g)$ if there exists a large constant $C$ (ex. $C = 1000$) such that $f(N) < C*g(N)$ for all sufficiently large $N$.
+
+Equivalently, $f = O(g)$ if there is a $C > 0$ (ex. $C = 1000$) such that $f(N)/g(N) < $ for all $N$ large enough.
+
+\begin{equation}
+f = O(g) \hspace{5mm} \textnormal{if} \hspace{5mm} \lim_{\sup N \to \infty} \frac{f(N)}{g(N)} < \infty
+\end{equation}
+
+\end{definition}
+
+\subsection{Examples}
+
+Example 1. $f(N) = 5N^2 + 4N + 3$. We want to show $f = O(N^2)$.
+
+\begin{proof}
+Let $C$ = 12. Then
+
+\begin{align*}
+F(N) &= 5N^2 + 4N + 3 < 5N^2 + 4N \\
+&< 5N^2 + 4N^2 + 3N^2 \hspace{5mm} [\textnormal{for $N > 2$}] \\
+&= 12N^2 \\
+&= CN^2
+\end{align*}
+
+Therefore $f = O(N^2)$.
+
+\end{proof}
+
+Example 2. $f(N) = 5N^2 + 4N + 3$. We want to show $f = O(N^3)$.
+
+\begin{proof}
+Let $C = 12$. Then
+
+\begin{align*}
+f(N) &= 5N^2 + 4N + 3 \\
+&< 5N^3 + 4N^3 + 3N^3 \hspace{5mm} [\textnormal{for $N > 2$}] \\
+&= 12N^3 \\
+&< CN^3
+\end{align*}
+
+Therefore $f = O(N^3)$.
+
+\end{proof}
+
+\subsection{Common orders of magnitude}
+
+\begin{itemize}
+\item $N^2 = O(N^a)$ for all $a \geq 2$
+\item $log(N)$ is smaller than any power of $N$ for all large enough $N$
+
+\begin{itemize}
+\item That is, $log(N) = O(N^{0.1})$ or $log^{10}(N) = O(N)$.
+\end{itemize}
+
+\end{itemize}
+
+\end{document}
