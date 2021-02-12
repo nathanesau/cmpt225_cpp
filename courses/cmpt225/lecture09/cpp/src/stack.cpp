@@ -41,7 +41,8 @@ Type StackLinkedList<Type>::pop()
 {
     if (!top)
     {
-        throw std::exception("Cannot pop from empty stack");
+        // "Cannot pop from empty stack"
+        throw std::exception();
     }
 
     Type data = top->data;
@@ -52,6 +53,7 @@ Type StackLinkedList<Type>::pop()
     return data;
 }
 
+template <>
 std::string StackLinkedList<int>::to_string() const
 {
     std::string s;
@@ -67,6 +69,7 @@ std::string StackLinkedList<int>::to_string() const
     return s;
 }
 
+template <>
 std::string StackLinkedList<std::string>::to_string() const
 {
     std::string s;
@@ -93,7 +96,8 @@ Type StackArrayList<Type>::pop()
 {
     if (arr.empty())
     {
-        throw std::exception("Cannot pop from empty stack");
+        // "Cannot pop from empty stack"
+        throw std::exception();
     }
 
     Type data = arr[0];
@@ -103,6 +107,7 @@ Type StackArrayList<Type>::pop()
     return data;
 }
 
+template <>
 std::string StackArrayList<int>::to_string() const
 {
     std::string s;
@@ -115,6 +120,7 @@ std::string StackArrayList<int>::to_string() const
     return s;
 }
 
+template <>
 std::string StackArrayList<std::string>::to_string() const
 {
     std::string s;

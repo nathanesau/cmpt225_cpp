@@ -26,6 +26,29 @@ s1.val: 41
 s2.val: 41
 ```
 
+## Java
+
+builder sample output:
+
+```bash
+Circle: center=(0,0), radius = 100
+Square: top-left=(10,20), length = 50
+```
+
+factory sample output:
+
+```bash
+Circle: center=(0,0), radius = 10
+Square: top-left=(0,0), length = 10
+Rectangle: top-left=(0,0), length = 10, width = 20
+```
+
+singleton sample output:
+
+```bash
+the objects are equal:true
+the objects are equal:true
+```
 ## Rust
 
 builder_rust sample output:

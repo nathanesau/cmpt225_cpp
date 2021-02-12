@@ -14,9 +14,58 @@ mylinkedlists sample output:
 5
 ```
 
+## Java
+
+custom sample output:
+
+```bash
+Nothing to do here
+```
+
+mylinkedlists sample output:
+
+```bash
+0) ABC
+1) ABC
+2) 456
+3) 123
+4) ABC
+5) ABC
+6) FGC
+7) BC
+8) XYZ
+9) ABC
+10) 000
+11) 111
+12) 222
+
+removeAllOccurences("ABC");
+0) 456
+1) 123
+2) FGC
+3) BC
+4) XYZ
+5) 000
+6) 111
+7) 222
+
+remove head and tail
+0) 456
+1) 123
+2) FGC
+3) BC
+4) XYZ
+5) 000
+6) 111
+7) 222
+
+strings[0] = 456
+strings[3] = NEW-ELT
+```
+
 ## Rust
 
-custom_rust sample output:
+custom sample output:
 
 ```bash
 a: ping
@@ -30,7 +79,7 @@ b: pingpong
 c: pingpong
 ```
 
-mylinkedlists_rust sample output:
+mylinkedlists sample output:
 
 ```bash
 list.pop(): 3

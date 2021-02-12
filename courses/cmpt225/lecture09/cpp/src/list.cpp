@@ -40,7 +40,8 @@ Type SinglyLinkedList<Type>::pop_front()
 {
     if (!head)
     {
-        throw std::exception("Cannot pop from empty list");
+        // "Cannot pop from empty list"
+        throw std::exception();
     }
 
     Type data = head->data;
@@ -73,7 +74,8 @@ Type SinglyLinkedList<Type>::pop_back()
 {
     if (!head)
     {
-        throw std::exception("Cannot pop from empty list");
+        // "Cannot pop from empty list"
+        throw std::exception();
     }
     else if (!head->next)
     {
@@ -96,6 +98,7 @@ Type SinglyLinkedList<Type>::pop_back()
     }
 }
 
+template<>
 std::string SinglyLinkedList<int>::to_string() const
 {
     std::string s;
@@ -111,6 +114,7 @@ std::string SinglyLinkedList<int>::to_string() const
     return s;
 }
 
+template <>
 std::string SinglyLinkedList<std::string>::to_string() const
 {
     std::string s;
@@ -164,7 +168,8 @@ Type DoublyLinkedList<Type>::pop_front()
 {
     if (!head)
     {
-        throw std::exception("Cannot pop from empty list");
+        // "Cannot pop from empty list"
+        throw std::exception();
     }
 
     Type data = head->data;
@@ -206,7 +211,8 @@ Type DoublyLinkedList<Type>::pop_back()
 {
     if (!tail)
     {
-        throw std::exception("Cannot pop from empty list");
+        // "Cannot pop from empty list"
+        throw std::exception();
     }
 
     Type data = tail->data;
@@ -226,6 +232,7 @@ Type DoublyLinkedList<Type>::pop_back()
     return data; 
 }
 
+template <>
 std::string DoublyLinkedList<int>::to_string() const
 {
     std::string s;
@@ -241,6 +248,7 @@ std::string DoublyLinkedList<int>::to_string() const
     return s;
 }
 
+template <>
 std::string DoublyLinkedList<std::string>::to_string() const
 {
     std::string s;

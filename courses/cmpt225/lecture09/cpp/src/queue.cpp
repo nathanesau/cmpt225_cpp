@@ -43,7 +43,8 @@ Type QueueLinkedList<Type>::pop()
 {
     if (!front)
     {
-        throw std::exception("Cannot pop from empty queue");
+        // "Cannot pop from empty queue"
+        throw std::exception();
     }
 
     Type data = front->data;
@@ -63,6 +64,7 @@ Type QueueLinkedList<Type>::pop()
     return data;
 }
 
+template <>
 std::string QueueLinkedList<int>::to_string() const
 {
     std::string s;
@@ -78,6 +80,7 @@ std::string QueueLinkedList<int>::to_string() const
     return s;
 }
 
+template <>
 std::string QueueLinkedList<std::string>::to_string() const
 {
     std::string s;
@@ -104,7 +107,8 @@ Type QueueArrayList<Type>::pop()
 {
     if (arr.empty())
     {
-        throw std::exception("Cannot pop from empty queue");
+        // "Cannot pop from empty queue"
+        throw std::exception();
     }
 
     Type data = arr[0];
@@ -114,6 +118,7 @@ Type QueueArrayList<Type>::pop()
     return data;
 }
 
+template <>
 std::string QueueArrayList<int>::to_string() const
 {
     std::string s;
@@ -126,6 +131,7 @@ std::string QueueArrayList<int>::to_string() const
     return s;
 }
 
+template <>
 std::string QueueArrayList<std::string>::to_string() const
 {
     std::string s;

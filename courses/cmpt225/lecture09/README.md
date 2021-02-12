@@ -46,6 +46,48 @@ Functions to be implemented for the data structures:
 | Queue | push | Push element to back of queue, O(1) |
 | Queue | pop | Pop element from front of queue, O(1) |
 
+## C++
+
+```cpp/src/main.cpp`` output:
+
+```bash
+queue1 before pop: 5 10 
+queue1 after pop: 10
+queue2 before pop: 5 10
+queue2 after pop: 10
+list1 before pop_front: 10 5
+list1 after pop_front: 5
+list2 before pop_front: 10 5
+list2 after pop_front: 5
+stack1 before pop: 10 5
+stack1 after pop: 5
+stack2 before pop: 10 5
+stack2 after pop: 5
+```
+
+## Java
+
+sample output:
+
+```bash
+7 3 5 
+3 5
+5 3 7
+5 3
+7 3 5
+3 5
+5 3 7
+5 3
+5 3 7
+3 7
+[5, 3, 7]
+[3, 7]
+7 3 5 
+3 5
+[7, 3, 5]
+[3, 5]
+```
+
 ## Python
 
 ``python/list.py`` output:
