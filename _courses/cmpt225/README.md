@@ -67,3 +67,9 @@ cargo build
 # run the program
 cargo run
 ```
+
+## Additional Resources
+
+CMPT 225 templates:
+
+* https://github.com/nathanesau-academic/cmpt225_templates
