@@ -6,12 +6,19 @@ Code files are organized based on the lecture that they are related to.
 
 ## Summary
 
+### Assignments
+
+| Assignment | Link |
+| ---------- | ---- | 
+| Assignment 1 | [hw1-solution/README.md](hw1-solution/README.md) |
+| Assignment 2 | [hw2-solution/README.md](hw2-solution/README.md) |
+
+### Lectures
+
 Note: the original language for the course is Java.
 
 * Java code for (Lecture 01 - Lecture 08) is mostly written by instructor. I made some minor modifications, such as adding maven projects, etc.
 * Rest of the code in this folder is written by [nathanesau](https://github.com/nathanesau).
-
-The code for other languages was written by me.
 
 | Lecture | Topic(s) | Java | C++ | Rust | Python |
 | ------- | -------- | ---- | --- | ---- | ------ |

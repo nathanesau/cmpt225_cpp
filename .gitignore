@@ -3,6 +3,7 @@ build
 
 # rust or java files
 target
+.project
 
 # editor files
 .vscode/launch.json
