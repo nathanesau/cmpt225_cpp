@@ -26,14 +26,14 @@ Note: the original language for the course is Java.
 | Lecture 02 | Introduction to Java.<br /> Variables and strong typing.<br /> Basic OOP. | Yes | Yes | Yes | No |
 | Lecture 03 | Basic OOP continued. | Yes | Yes | Yes | No |
 | Lecture 04 | File I/O.<br /> Using command line arguments.<br />Exceptions. | No | No | No | No |
-| Lecture 05 | n/a | Yes | Yes | Yes | No |
-| Lecture 06 | n/a | Yes | Yes | Yes | No |
-| Lecture 07 | n/a | Yes | Yes | Yes | No |
-| Lecture 08 | n/a | Yes | Yes | Yes | No |
-| Lecture 09 | n/a | Yes | Yes | No | Yes |
-| Lecture 10 | n/a | Yes | No | No | Yes |
-| Lecture 11 | n/a | No | No | No | No |
-| Lecture 12 | n/a | No | No | No | Yes |
+| Lecture 05 | Basic Java.<br /> Coding Style conventions. | Yes | Yes | Yes | No |
+| Lecture 06 | Comparable interface.<br /> Singleton design pattern. | Yes | Yes | Yes | No |
+| Lecture 07 | Two more factory design patterns.<br /> Factory, builder. <br /> Streams in Java. | Yes | Yes | Yes | No |
+| Lecture 08 | Linked Lists. | Yes | Yes | Yes | No |
+| Lecture 09 | Doubly Linked Lists. | Yes | Yes | No | Yes |
+| Lecture 10 | Queues.<br /> Execution stack.<br /> A comment on recursion. | Yes | No | No | Yes |
+| Lecture 11 | Big-O notation.<br /> Master Theorem. | No | No | No | No |
+| Lecture 12 | Master Theorem.<br /> Faster Integer Multiplication.<br /> Merge Sort - Iterative Implementation. | No | No | No | Yes |
 
 ## Development Instructions
 

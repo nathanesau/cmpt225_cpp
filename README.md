@@ -13,3 +13,9 @@ Data Structures and Algorithms (Java, C++, Rust, Python).
 * [Python](python/README.md): Python implementations for Data Structures and Algorithms.
 
 * [Rust](rust/README.md): Rust implementations for Data Structures and Algorithms.
+
+## Additional Resources
+
+Data Structure Visualizations:
+
+* https://github.com/nathanesau/data_structure_visualizations
