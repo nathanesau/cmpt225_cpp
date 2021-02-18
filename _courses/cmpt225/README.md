@@ -33,7 +33,10 @@ Note: the original language for the course is Java.
 | Lecture 09 | Doubly Linked Lists. | Yes | Yes | No | Yes |
 | Lecture 10 | Queues.<br /> Execution stack.<br /> A comment on recursion. | Yes | No | No | Yes |
 | Lecture 11 | Big-O notation.<br /> Master Theorem. | No | No | No | No |
-| Lecture 12 | Master Theorem.<br /> Faster Integer Multiplication.<br /> Merge Sort - Iterative Implementation. | No | No | No | Yes |
+| Lecture 12 | Big-O notation.<br /> Master Theorem. | No | No | No | Yes |
+| Lecture 13 | Master Theorem.<br /> Faster Integer Multiplication.<br /> Merge Sort - Iterative Implementation. | Yes | No | No | Yes |
+| Lecture 14 | Trees.<br /> Binary Trees. | Yes | No | No | Yes | 
+| Lecture 15 | Binary tree traverals. | Yes | No | No | No |
 
 ## Development Instructions
 
