@@ -38,6 +38,15 @@ Note: the original language for the course is Java.
 | Lecture 14 | Trees.<br /> Binary Trees. | Yes | No | No | Yes | 
 | Lecture 15 | Binary tree traverals. | Yes | No | No | No |
 
+### Practice Problems
+
+| Practice Set | Topic(s) | Language(s) | 
+| ------------ | -------- | -------- |
+| Practice 1 | Big-O Notation | n/a |
+| Practice 2 | Master Theorem | n/a |
+| Practice 3 | Stacks and Queues | Java |
+| Practice 4 | Binary Trees | n/a |
+
 ## Development Instructions
 
 ## C++
