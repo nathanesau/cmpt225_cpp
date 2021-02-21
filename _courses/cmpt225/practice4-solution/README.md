@@ -53,3 +53,29 @@ implement the following functions in java:
 * int sum - returns the sum of all nodes in the subtree rooted at this. the running time must be O(1).
 * note: the setters are allowed to run in time O(log(size of the tree)).
 * now suppose we want to add also the method depth() that returns the depth of the node (relatively to the root of the entire tree) in O(1). Propose a method to support this operation. What will be the running time of the setters.
+
+## additional information
+
+``draw_tree`` information.
+
+```python
+"""
+            1
+          /   \
+         2     3
+        / \
+       4   5
+
+    or equivalently
+    
+    [
+        ['.', '.', '.', '.', '1', '.', '.'],
+        ['.', '.', '.', '/', '.', '\', '.'],
+        ['.', '.',' 2', '.', '.', '.', '3'],
+        ['.', '/', '.', '\', '.', '.', '.'],
+        ['4', '.', '.', '.', '5', '.', '.']
+    ]
+
+    print('\n'.join([''.join(row) for row in arr]))
+"""
+```

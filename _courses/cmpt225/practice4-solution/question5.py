@@ -4,4 +4,7 @@ using iterative implementation.
 """
 
 def get_size(bt):
-    pass
+    """
+    use level-order iterative algorithm
+    """
+    pass    
