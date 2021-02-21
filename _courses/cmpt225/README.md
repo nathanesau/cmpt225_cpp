@@ -43,9 +43,9 @@ Note: the original language for the course is Java.
 | Practice Set | Topic(s) | Language(s) | 
 | ------------ | -------- | -------- |
 | Practice 1 | Big-O Notation | n/a |
-| Practice 2 | Master Theorem | n/a |
+| Practice 2 | Master Theorem | n/a  |
 | Practice 3 | Stacks and Queues | Java |
-| Practice 4 | Binary Trees | n/a |
+| Practice 4 | Binary Trees | Python |
 
 ## Development Instructions
 
