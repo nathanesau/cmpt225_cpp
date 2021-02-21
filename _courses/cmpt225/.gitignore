@@ -4,3 +4,10 @@
 .project
 *.prefs
 .classpath
+
+# latex files
+*.aux
+*.fdb*
+*.fls
+*.log
+*.synctex.gz

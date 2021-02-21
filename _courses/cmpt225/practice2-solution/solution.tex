@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage[links,assignheader]{uassign}
+
+\newtheorem{theorem}{Theorem}
+
+\lhead{practice2-solution \\ cmpt 225 (Spring 2021)}
+\rhead{Nathan Esau \\ 301197568}
+
+\begin{document}
+
+\section*{Background}
+
+\begin{theorem}
+Suppose we are given recurrence relation $T(n) = a \times T(n/b) + f(n)$. Let $c = log_{b}(a)$. Then
+
+\begin{enumerate}
+\item If $f(n) = O(n^d)$ for $d < c$ then $T(n) = \Theta(n^c)$
+\item If $f(n) = \Theta(n^c)$ then $T(n) = \Theta(n^c log(n))$
+\item If $f(n) = \Omega(n^c)$ then $T(n) = \Theta(f)$
+\end{enumerate}
+
+Note that $\Omega$ is asymptotic lower bound, $O$ is asymptotic upper bound and $\Theta$ is exact bound.
+
+\end{theorem}
+
+\section*{Questions}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 2T(n/2) + O(1)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{2}(2) = 1$ and $d = 0$. Since $d < c$ then $T(n) = \Theta(n)$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 3T(n/2) + O(1)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{2}(3) = 1.58$ and $d = 0$. Since $d < c$ then $T(n) = \Theta(n^{1.58})$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 4T(n/2) + O(n)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{2}(4) = 2$ and $d = 1$. Since $d < c$ then $T(n) = \Theta(n^{2})$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 3T(n/2) + O(n^2)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{2}(3) = 1.58$ and $d = 2$. We have case three, so $T(n) = O(n^2)$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 3T(n/3) + O(n)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{3}(3) = 1$ and $d = 1$. We have case two, so $T(n) = O(n log(n))$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 8T(n/2) + O(n^2)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{8}(2) = 3$ and $d = 2$. We have case one, so $T(n) = O(n^3)$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 8T(n/2) + O(n^3)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{8}(2) = 3$ and $d = 3$. We have case two, so $T(n) = O(n^3 log(n))$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 8T(n/2) + O(n^7)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{8}(2) = 3$ and $d = 7$. We have case three, so $T(n) = O(n^7)$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 5T(n/3) + O(n^{1.5})$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{5}(3) = 1.46$ and $d = 1.5$. We have case three, so $T(n) = O(n^{1.5})$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 5T(n/3) + O(n^{1.4})$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{5}(3) = 1.46$ and $d = 1.4$. We have case one, so $T(n) = O(n^{1.46})$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 3T(n/3) + O(n)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{3}(3) = 1$ and $d = 1$. We have case two, so $T(n) = O(nlog(n))$.
+\end{solution}
+
+\begin{question}
+Apply Master Theorem to find the running time of $T(n) = 9T(n/3) + O(n^2)$.
+\end{question}
+
+\begin{solution}
+Here $c = log_{3}(9) = 2$ and $d = 2$. We have case two, so $T(n) = O(n^2log(n))$.
+\end{solution}
+
+\end{document}
