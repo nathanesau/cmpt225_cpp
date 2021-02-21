@@ -16,7 +16,7 @@ implement the following functions in java:
 
 7. write an algorithm that gets two nodes in a binary tree and computes the distance between them. the algorithm must run in time O(height of the tree). [question7.py](question7.py)
 
-* note this can be inefficient if u and v are very deep in the tree, but the distance between them is all. write an algorithm that computes the distance between two nodes, u and v in time O(dist(u, v)).
+* note this can be inefficient if u and v are very deep in the tree, but the distance between them is small. write an algorithm that computes the distance between two nodes, u and v in time O(dist(u, v)).
 
 8. write an algorithm that gets a binary tree, a number k and returns all values in level k. what is the running time of your algorithm? [question8.py](question8.py)
 
@@ -79,3 +79,23 @@ implement the following functions in java:
     print('\n'.join([''.join(row) for row in arr]))
 """
 ```
+
+[total number of binary trees](https://stackoverflow.com/questions/3042412/with-n-no-of-nodes-how-many-different-binary-and-binary-search-trees-possib) information.
+
+$t(n) = \frac{2n!}{(n+1)!n!}$
+
+* $t(0) = 1$
+* $t(1) = 1$
+
+
+[total number of binary search trees](https://stackoverflow.com/questions/3042412/with-n-no-of-nodes-how-many-different-binary-and-binary-search-trees-possib) information.
+
+$t(n) = \sum_{i=1}^{n} t(i-1) t(n-i)$.
+
+* $t(0) = 1$
+* $t(1) = 1$
+* $t(2) = 2$
+* $t(3) = 5$
+* $t(4) = 14$
+
+

@@ -350,6 +350,22 @@ def build_tree5():
     return tree
 
 
+def build_tree6():
+    """
+    https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree
+    """
+    root = Node(1)
+    root.left = Node(2, parent=root)
+    root.right = Node(3, parent=root)
+    root.left.left = Node(4, parent=root.left)
+    root.left.right = Node(5, parent=root.left)
+    root.right.left = Node(6, parent=root.right)
+    root.right.right = Node(7, parent=root.right)
+    root.right.left.right = Node(8, parent=root.right.left)
+    tree = BinaryTree(root)
+    return tree
+
+
 def test_tree(tree):
     tree_summary(tree)
     assert pre_order_iterative(tree) == pre_order(tree)
