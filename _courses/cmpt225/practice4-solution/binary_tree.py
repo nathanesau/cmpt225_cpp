@@ -111,6 +111,9 @@ def in_order_iterative(tree):
     return array containing in-order traveral for binary tree
     - left, root, right
     (category: depth first traversal)
+
+    an excellent reference:
+    https://github.com/joowani/binarytree/blob/main/binarytree
     """
     arr = []
 

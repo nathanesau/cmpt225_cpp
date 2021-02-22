@@ -18,32 +18,32 @@ implement the following functions in java:
 
 * note this can be inefficient if u and v are very deep in the tree, but the distance between them is small. write an algorithm that computes the distance between two nodes, u and v in time O(dist(u, v)).
 
-8. write an algorithm that gets a binary tree, a number k and returns all values in level k. what is the running time of your algorithm? [question8.py](question8.py)
+8. write an algorithm that gets a binary tree, a number k and returns all values in level k. what is the running time of your algorithm? [question8.py](question8.py) TODO (easy)
 
-9. draw all trees whose preOrder traversal is [1, 2, 3, 4].[question9.py](question9.py)
+9. draw all trees whose preOrder traversal is [1, 2, 3, 4].[question9.py](question9.py)TODO (hard)
 
 10. draw all trees whose inOrder traversal is [1, 2, 3, 4]. [question10.py](question10.py)
 
-11. draw all trees whose postOrder traversal is [1, 2, 3, 4]. [question11.py](question11.py)
+11. draw all trees whose postOrder traversal is [1, 2, 3, 4]. [question11.py](question11.py) TODO (hard)
 
 12. write an algorithm that gets an array of numbers and returns a binary tree whose inOrder traversal is this sequence. [question12.py](question12.py)
 
-13. prove that if we know preOrder and inOrder traversal of a binary tree, then we can reconstruct the tree in a unique way. write an algorithm that reconstructs the tree from its preOrder and inOrder. [question13.py](question13.py)
+13. prove that if we know preOrder and inOrder traversal of a binary tree, then we can reconstruct the tree in a unique way. write an algorithm that reconstructs the tree from its preOrder and inOrder. [question13.py](question13.py) TODO (hard)
 
 * answer the same question when given postOrder and inOrder.
 * answer the same question when given preOrder and postOrder.
 
-14. write an algorithm that gets two binary trees and checks if they have the same inOrder traversal. Write is as efficient as possible. for example, if the inOrders differ in the second position, then the algorithm will not explore the trees entirely, but will stop after only a small number of nodes in each of the trees. [question14.py](question14.py)
+14. write an algorithm that gets two binary trees and checks if they have the same inOrder traversal. Write is as efficient as possible. for example, if the inOrders differ in the second position, then the algorithm will not explore the trees entirely, but will stop after only a small number of nodes in each of the trees. [question14.py](question14.py) TODO (easy)
 
-15. write an algorithm that gets an array of numbers and returns all binary trees whose inOrder traversals are this sequence. [question15.py](question15.py)
+15. write an algorithm that gets an array of numbers and returns all binary trees whose inOrder traversals are this sequence. [question15.py](question15.py) modification of question 10 (hard)
 
-16. write an algorith that gets an array of numbers and returns all binary trees whose preOrder traversals are this sequence. [question16.py](question16.py)
+16. write an algorith that gets an array of numbers and returns all binary trees whose preOrder traversals are this sequence. [question16.py](question16.py) modifidication of question 9 (hard)
 
-17. how many binary trees have preOrder traversal sequence equal to [1, 2, 3, 4, ... n]? [question17.py](question17.py)
+17. how many binary trees have preOrder traversal sequence equal to [1, 2, 3, 4, ... n]? [question17.py](question17.py) TODO (easy)
 
-18. how many binary trees have inOrder traversal sequence equal to [1, 2, 3, 4, ... n]? [question18.py](question18.py)
+18. how many binary trees have inOrder traversal sequence equal to [1, 2, 3, 4, ... n]? [question18.py](question18.py) TODO (easy)
 
-19. define a class BTNodeInt that supports the following operations: [question19.py](question19.py)
+19. define a class BTNodeInt that supports the following operations: [question19.py](question19.py) TODO (medium)
 
 * getData/ setData
 * getLeftChild/ setLeftChild
