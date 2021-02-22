@@ -90,7 +90,7 @@ $t(n) = \frac{2n!}{(n+1)!n!}$
 
 [total number of binary search trees](https://stackoverflow.com/questions/3042412/with-n-no-of-nodes-how-many-different-binary-and-binary-search-trees-possib) information.
 
-$t(n) = \sum_{i=1}^{n} t(i-1) t(n-i)$.
+$t(n) = \sum_{i=1}^{n} t(i-1) t(n-i)$
 
 * $t(0) = 1$
 * $t(1) = 1$
@@ -98,4 +98,25 @@ $t(n) = \sum_{i=1}^{n} t(i-1) t(n-i)$.
 * $t(3) = 5$
 * $t(4) = 14$
 
+The general algorithm for generating these trees is below. It's an important one to know.
 
+```python
+def _generate_roots(start, end):
+    if start > end:
+        return [None]
+    
+    roots = []
+    for i in range(start, end+1):
+        ltrees = _generate_roots(start, i-1)
+        rtrees = _generate_roots(i+1, end)
+        for lnode in ltrees:
+            for rnode in rtrees:
+                root = Node(i)
+                root.left = lnode
+                root.right = rnode
+                roots.append(root)
+    
+    return roots
+
+roots = _generate_roots(1, n)
+```

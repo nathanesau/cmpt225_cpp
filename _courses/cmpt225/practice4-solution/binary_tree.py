@@ -105,6 +105,33 @@ def in_order(tree):
     return arr
 
 
+def in_order_iterative(tree):
+    """
+    (same as ``in_order`` but iterative)
+    return array containing in-order traveral for binary tree
+    - left, root, right
+    (category: depth first traversal)
+    """
+    arr = []
+
+    def _visit(node):
+        arr.append(node.data)
+
+    current = tree.root
+    s = []
+
+    while current is not None or len(s) != 0:
+        if current is not None:
+            s.append(current)
+            current = current.left
+        elif len(s) != 0:
+            current = s.pop()
+            _visit(current)
+            current = current.right
+
+    return arr
+
+
 def pre_order(tree):
     """
     return array containing pre-order traversal for binary tree
@@ -130,7 +157,7 @@ def pre_order(tree):
 
 def pre_order_iterative(tree):
     """
-    (same as ``in_order`` but iterative)
+    (same as ``pre_order`` but iterative)
     return array containing pre-order traversal for binary tree
     - root, left, right
     (category: depth first traversal)
@@ -171,6 +198,34 @@ def post_order(tree):
         _visit(node)
 
     _post_order(tree.root)
+
+    return arr
+
+
+def post_order_iterative(tree):
+    """
+    (same as ``post_order`` but iterative)
+    retunr array containing post-order traversal for binary tree
+    - left, right, root
+    """
+    arr = []
+
+    def _visit(node):
+        arr.append(node.data)
+
+    s1 = [tree.root]
+    s2 = [] # for ``visit```
+
+    while s1:
+        node = s1.pop(0)
+        if node.left is not None:
+            s1.insert(0, node.left)
+        if node.right is not None:
+            s1.insert(0, node.right)
+        s2.append(node)
+
+    while s2:
+        _visit(s2.pop())
 
     return arr
 
@@ -246,6 +301,30 @@ def max_depth(root):
     ldepth = max_depth(root.left)
     rdepth = max_depth(root.right)
     return max(ldepth + 1, rdepth + 1)
+
+
+def get_tree_with_links(tree):
+    """
+    add parent links to a binary tree
+    """
+    root = None
+    q = [(tree.root, None, None)]
+    while q:
+        _node, _parent, _type = q.pop(0)
+        node = Node(_node.data)
+        if _parent is None:
+            root = node
+        else:
+            node.parent = _parent
+            if _type == 'l':
+                _parent.left = node
+            if _type == 'r':
+                _parent.right = node
+        if _node.left is not None:
+            q.append((_node.left, node, 'l'))
+        if _node.right is not None:
+            q.append((_node.right, node, 'r'))
+    return BinaryTree(root)
 
 
 def tree_summary(tree):
@@ -369,6 +448,8 @@ def build_tree6():
 def test_tree(tree):
     tree_summary(tree)
     assert pre_order_iterative(tree) == pre_order(tree)
+    assert in_order_iterative(tree) == in_order(tree)
+    assert post_order_iterative(tree) == post_order(tree)    
 
 
 if __name__ == "__main__":
