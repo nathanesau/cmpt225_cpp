@@ -12,6 +12,7 @@ Code files are organized based on the lecture that they are related to.
 | ---------- | ---- | 
 | Assignment 1 | [hw1-solution/README.md](hw1-solution/README.md) |
 | Assignment 2 | [hw2-solution/README.md](hw2-solution/README.md) |
+| Assignment 3 | [hw3-solution/README.md](hw3-solution/README.md) |
 
 ### Lectures
 
