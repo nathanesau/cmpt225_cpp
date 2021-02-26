@@ -38,6 +38,8 @@ Note: the original language for the course is Java.
 | Lecture 13 | Master Theorem.<br /> Faster Integer Multiplication.<br /> Merge Sort - Iterative Implementation. | Yes | No | No | Yes |
 | Lecture 14 | Trees.<br /> Binary Trees. | Yes | No | No | Yes | 
 | Lecture 15 | Binary tree traverals. | Yes | No | No | No |
+| Lecture 16 | Arithmetic expressions:<br /> Infix/ Prefix/ Postfix notations. | No | No | No | No |
+| Lecture 17 | Arithmetic expressionsL<br /> Infix/ Prefix/ Postfix notations.<br /> Representation using binary trees. | Yes | No | No | No |
 
 ### Practice Problems
 
