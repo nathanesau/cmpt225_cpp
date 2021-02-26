@@ -10,3 +10,4 @@ Summary of files:
 | Fast Integer Multiplication | [karatsuba.py](../_courses/cmpt225/lecture12/python/karatsuba.py) | n/a | 
 | Merge Sort | [merge_sort.py](../_courses/cmpt225/lecture13/python/merge_sort.py) | n/a |
 | Binary Trees | [binary_tree.py](../_courses/cmpt225/practice4-solution/binary_tree.py) | a substantial amount of binary tree code is [here](../_courses/cmpt225/practice4-solution/README.md) |
+| Heap | [heap.py](../_courses/cmpt225/lecture18/python/heap.py) | n/a |

@@ -11,3 +11,4 @@ Summary of files:
 | Binary Tree | [BinaryTree.java](../_courses/cmpt225/lecture14/java/src/main/java/example/binarytrees/BinaryTree.java) | n/a | 
 | Binary Tree Traversals | [BinaryTree.java](../_courses/cmpt225/lecture15/java/src/main/java/example/binarytrees/BinaryTree.java) | n/a |
 | Arithmetic Expressions | [ArithmeticExpressions.java](../_courses/cmpt225/lecture17/java/src/main/java/example/arithmetic/ArithmeticExpressions.java) | n/a |
+| Heap | [Heap.java](../_courses/cmpt225/lecture18/java/src/main/java/example/Heap.java) | n/a |
