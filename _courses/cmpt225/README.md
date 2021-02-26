@@ -40,7 +40,7 @@ Note: the original language for the course is Java.
 | Lecture 15 | Binary tree traverals. | Yes | No | No | No |
 | Lecture 16 | Arithmetic expressions<br /> Infix/ Prefix/ Postfix notations. | No | No | No | No |
 | Lecture 17 | Arithmetic expressions<br /> Infix/ Prefix/ Postfix notations.<br /> Representation using binary trees. | Yes | No | No | No |
-| Lecture 18 | Priority queues<br /> Heap. | Yes | No | No | No |
+| Lecture 18 | Priority queues<br /> Heap. | Yes | No | No | Yes |
 
 ### Practice Problems
 

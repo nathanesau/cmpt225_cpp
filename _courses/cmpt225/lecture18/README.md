@@ -11,3 +11,12 @@ sample output:
 --------------
 [1, 2, 4, 8, 3, 9, 6]
 ```
+
+
+## Python 
+
+sample output:
+
+```bash
+1
+```
