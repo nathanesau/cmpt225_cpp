@@ -82,6 +82,28 @@ class BinaryTree:
         return '\n'.join([''.join(row) for row in arr])
 
 
+def in_order_nodes(tree):
+    """
+    return array of nodes containing in-order traversal for binary tree
+    - left, root, right
+    """
+    arr = []
+
+    def _visit(node):
+        arr.append(node)
+
+    def _in_order(node):
+        if node is None:
+            return
+        _in_order(node.left)
+        _visit(node)
+        _in_order(node.right)
+
+    _in_order(tree.root)
+
+    return arr
+
+
 def in_order(tree):
     """
     return array containing in-order traveral for binary tree
@@ -135,6 +157,28 @@ def in_order_iterative(tree):
     return arr
 
 
+def pre_order_nodes(tree):
+    """
+    return array of nodes containing pre-order traversal for binary tree
+    - root, left, right
+    """
+    arr = []
+
+    def _visit(node):
+        arr.append(node)
+
+    def _pre_order(node):
+        if node is None:
+            return
+        _visit(node)
+        _pre_order(node.left)
+        _pre_order(node.right)
+
+    _pre_order(tree.root)
+
+    return arr
+
+
 def pre_order(tree):
     """
     return array containing pre-order traversal for binary tree
@@ -178,6 +222,28 @@ def pre_order_iterative(tree):
             s.insert(0, node.right)
         if node.left is not None:
             s.insert(0, node.left)
+
+    return arr
+
+
+def post_order_nodes(tree):
+    """
+    return array of nodes containing post-order traversal for binary tree
+    - left, right, root
+    """
+    arr = []
+
+    def _visit(node):
+        arr.append(node)
+
+    def _post_order(node):
+        if node is None:
+            return
+        _post_order(node.left)
+        _post_order(node.right)
+        _visit(node)
+
+    _post_order(tree.root)
 
     return arr
 
@@ -448,11 +514,41 @@ def build_tree6():
     return tree
 
 
+def build_tree7():
+    """
+    custom example
+    """
+    root = Node(1)
+    root.left = Node(5, parent=root)
+    root.right = Node(4, parent=root)
+    root.left.left = Node(3, parent=root.left)
+    root.left.right = Node(2, parent=root.left)
+    root.left.right.left = Node(9, parent=root.left.right)
+    root.right.right = Node(8, parent=root.right)
+    tree = BinaryTree(root)
+    return tree
+
+
+def build_tree8():
+    """
+    custom example
+    """
+    root = Node(1)
+    root.left = Node(5, parent=root)
+    root.right = Node(4, parent=root)
+    root.left.left = Node(3, parent=root.left)
+    root.left.left.right = Node(9, parent=root.left.left)
+    root.left.right = Node(2, parent=root.left)
+    root.right.right = Node(8, parent=root.right)
+    tree = BinaryTree(root)
+    return tree
+
+
 def test_tree(tree):
     tree_summary(tree)
     assert pre_order_iterative(tree) == pre_order(tree)
     assert in_order_iterative(tree) == in_order(tree)
-    assert post_order_iterative(tree) == post_order(tree)    
+    assert post_order_iterative(tree) == post_order(tree)
 
 
 if __name__ == "__main__":
@@ -462,3 +558,6 @@ if __name__ == "__main__":
     test_tree(build_tree3())
     test_tree(build_tree4())
     test_tree(build_tree5())
+    test_tree(build_tree6())
+    test_tree(build_tree7())
+    test_tree(build_tree8())

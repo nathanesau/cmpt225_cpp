@@ -5,10 +5,6 @@ import math
 from binary_tree import Node, BinaryTree, in_order, pre_order, post_order, get_tree_with_links
 
 
-def get_num_trees(n):
-    return int(math.factorial(2*n) / (math.factorial(n+1) * math.factorial(n)))
-
-
 def generate_trees(n):
     def _generate_roots(start, end):
         if start > end:
@@ -40,9 +36,6 @@ if __name__ == "__main__":
         print(f"pre_order: {pre_order(tree)}")
         print(f"post_order: {post_order(tree)}")
         print(f"{tree}\n")
-    
-    # closed form formula
-    print(f"num_trees: {get_num_trees(4)}")
 
     # count all trees
     print(f"in_order trees: {len(trees)}")
