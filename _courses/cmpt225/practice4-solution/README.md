@@ -25,7 +25,7 @@ implement the following functions in java or python:
 
 8. write an algorithm that gets a binary tree, a number k and returns all values in level k. what is the running time of your algorithm? [question8.py](question8.py).
 
-9. draw all trees whose preOrder traversal is [1, 2, 3, 4].[question9.py](question9.py)
+9. draw all trees whose preOrder traversal is [1, 2, 3, 4]. [question9.py](question9.py)
 
 10. draw all trees whose inOrder traversal is [1, 2, 3, 4]. [question10.py](question10.py)
 
