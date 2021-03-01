@@ -1,3 +1,17 @@
+"""
+for heap, the tree is always full
+it is convenient to represent is using an array
+
+store size of the tree
+BFS traversal of the heap
+
+[1,4,2,9,6,3,10,8,10,7]
+
+A: array[0]             root of array
+A: array[2i+1]          left child of array[i]
+A: array[2i+2]          right child of array[i]
+A: array[(j+1)/2-1]     parent of array[j]
+"""
 class Heap:
     def __init__(self, arr):
         self.arr = arr
@@ -44,5 +58,5 @@ class Heap:
 
 if __name__ == "__main__":
 
-    h = Heap([9,3,6,8,2,4,1])
-    print(h.get_min())
+    h1 = Heap([9,3,6,8,2,4,1])
+    print(h1.get_min())
