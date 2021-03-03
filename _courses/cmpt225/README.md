@@ -42,6 +42,7 @@ Note: the original language for the course is Java.
 | Lecture 17 | Arithmetic expressions<br /> Infix/ Prefix/ Postfix notations.<br /> Representation using binary trees. | Yes | No | No | No |
 | Lecture 18 | Priority queues<br /> Heaps. | Yes | No | No | Yes |
 | Lecture 19 | Heaps. | Yes | No | No | No |
+| Lecture 20 | Binary Search Trees. | No | No | No | Yes |
 
 ### Practice Problems
 
