@@ -52,6 +52,8 @@ Note: the original language for the course is Java.
 | Practice 2 | Master Theorem | n/a  |
 | Practice 3 | Stacks and Queues | Java |
 | Practice 4 | Binary Trees | Python |
+| Practice 5 | Heaps | Python |
+| Practice 6 | Binary Search Trees | Python |
 
 ## Development Instructions
 

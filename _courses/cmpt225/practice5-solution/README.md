@@ -2,14 +2,14 @@
 
 1. start with the array A = [7,1,4,2,9,3,4,10,5,8]
 
-a. apply buildHeap(A)
-b. add 6 to the heap
-c. remove min from heap
-d. remove min from the heap again
+a. apply buildHeap(A) [question1/part_a.png](question1/part_a.PNG)
+b. add 6 to the heap[question1/part_b.png](question1/part_b.PNG)
+c. remove min from heap [question1/part_c.png](question1/part_c.PNG)
+d. remove min from the heap again [question1/part_d.png](question1/part_d.PNG)
 
-2. apply buildHeap on the array [n, n-1, n-2, n-3, ..., 2, 1]
+2. apply buildHeap on the array [n, n-1, n-2, n-3, ..., 2, 1]. no discernible pattern.
 
-3. apply buildHeap on the array [1, 2, 3, 4, ..., n-1, 2]
+3. apply buildHeap on the array [1, 2, 3, 4, ..., n-1, n]. [1,2,3,...]
 
 4. modify min-heap of ints so that it also supports getAverage in O(1) time
 
