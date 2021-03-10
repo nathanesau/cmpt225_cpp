@@ -43,6 +43,7 @@ Note: the original language for the course is Java.
 | Lecture 18 | Priority queues<br /> Heaps. | Yes | No | No | Yes |
 | Lecture 19 | Heaps. | Yes | No | No | No |
 | Lecture 20 | Binary Search Trees. | No | No | No | Yes |
+| Lecture 21 | Binary Search Trees. | No 
 
 ### Practice Problems
 

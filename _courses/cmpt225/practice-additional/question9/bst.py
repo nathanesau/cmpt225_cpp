@@ -98,7 +98,7 @@ def remove_item(root, data):
 
     def _find_min(root):
         current = root
-        while root.left is not None: current = current.left
+        while current.left is not None: current = current.left
         return current
 
     item = _find(root, data)
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     root.right = Node(21, parent=root)
     root.right.left = Node(16, parent=root.right)
     root.right.right = Node(25, parent=root.right)
-    add_item(root, 6)
+    #add_item(root, 6)
 
     print("\nprint_sorted")
     print_sorted(root)
