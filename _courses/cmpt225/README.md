@@ -13,13 +13,13 @@ Code files are organized based on the lecture that they are related to.
 | Assignment 1 | [hw1-solution/README.md](hw1-solution/README.md) |
 | Assignment 2 | [hw2-solution/README.md](hw2-solution/README.md) |
 | Assignment 3 | [hw3-solution/README.md](hw3-solution/README.md) |
+| Assignment 4 | [hw4-solution/README.md](hw4-solution/README.md) |
 
 ### Lectures
 
 Note: the original language for the course is Java.
 
-* Java code for (Lecture 01 - Lecture 08) is mostly written by instructor. I made some minor modifications, such as adding maven projects, etc.
-* Rest of the code in this folder is written by [nathanesau](https://github.com/nathanesau).
+* Most of the code in this folder is written by [nathanesau](https://github.com/nathanesau). Some of the Java code was written by instructor.
 
 | Lecture | Topic(s) | Java | C++ | Rust | Python |
 | ------- | -------- | ---- | --- | ---- | ------ |
@@ -43,9 +43,11 @@ Note: the original language for the course is Java.
 | Lecture 18 | Priority queues<br /> Heaps. | Yes | No | No | Yes |
 | Lecture 19 | Heaps. | Yes | No | No | No |
 | Lecture 20 | Binary Search Trees. | No | No | No | Yes |
-| Lecture 21 | Binary Search Trees. | No 
+| Lecture 21 | Binary Search Trees. | No | No | No | No |
 
 ### Practice Problems
+
+Note: some practice sets were only partially completed.
 
 | Practice Set | Topic(s) | Language(s) | 
 | ------------ | -------- | -------- |
