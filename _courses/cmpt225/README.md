@@ -44,6 +44,14 @@ Note: the original language for the course is Java.
 | Lecture 19 | Heaps. | Yes | No | No | No |
 | Lecture 20 | Binary Search Trees. | No | No | No | Yes |
 | Lecture 21 | Binary Search Trees. | No | No | No | No |
+| Lecture 22 | Graphs<br /> Breadth First Search<br /> Depth First Search<br />. | No | No | No | No | 
+| Lecture 23 | A* algorithm. | No | No | No | No |
+| Lecture 24 | Graph Traversals. | No | No | No | No |
+| Lecture 25 | Hashing<br /> Separate Chaining. | No | No | No | No |
+| Lecture 26 | Hashing<br /> Open addressing/ probing<br /> 3-Sum. | No | No | No | No |
+| Lecture 27 | HashSet and HashMap<br /> 3-Sum. | No | No | No | No |
+| Lecture 28 | AVL trees. | No | No | No | No |
+| Lecture 29 | AVL trees. | No | No | No | No |
 
 ### Practice Problems
 
