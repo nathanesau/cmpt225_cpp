@@ -1,6 +1,17 @@
 # hw4-solution
 
-no solution yet! assignment isn't over.
+instructions:
+
+```bash
+# runs tests
+gradlew clean test
+
+# produce zip submission
+gradlew createSubmission
+
+# create javadoc
+gradlew javadoc
+```
 
 ## stats for code-golfers
 
