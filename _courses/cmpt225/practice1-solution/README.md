@@ -1,4 +1,4 @@
-# practice1-solution
+# practice1-solution - Big-O Notation
 
 see ``solution.tex``. 
 

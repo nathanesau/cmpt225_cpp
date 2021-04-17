@@ -1,4 +1,4 @@
-# practice3-solution
+# practice3-solution - Stacks and Queues
 
 assume queue has following methods: ``enqueue``, ``dequeue``, ``peek``, ``isEmpty``
 

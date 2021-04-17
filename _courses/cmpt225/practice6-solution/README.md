@@ -1,4 +1,4 @@
-# practice6-solution
+# practice6-solution - Binary Search Trees
 
 1. Implement the class BST with all its operations. We saw the pseudo-code, but it is not implemented in the code.
 

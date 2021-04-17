@@ -1,4 +1,4 @@
-# practice2-solution
+# practice2-solution - Master Theorem
 
 see ``solution.tex``. 
 

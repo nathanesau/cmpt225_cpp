@@ -1,4 +1,4 @@
-# practice5-solution
+# practice5-solution - Heaps
 
 1. start with the array A = [7,1,4,2,9,3,4,10,5,8]
 
