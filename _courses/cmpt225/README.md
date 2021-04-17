@@ -52,6 +52,10 @@ Note: the original language for the course is Java.
 | Lecture 27 | HashSet and HashMap<br /> 3-Sum. | No | No | No | No |
 | Lecture 28 | AVL trees. | No | No | No | No |
 | Lecture 29 | AVL trees. | No | No | No | No |
+| Lecture 30 | B-trees. | No | No | No | No |
+| Lecture 31 | Union-find. | Yes | No | No | Yes |
+| Lecture 32 | Union-find.<br /> Kruskal's algorithm. | No | No | No | No |
+| Lecture 33 | Selection algorithm. | No | No | No | No |
 
 ### Practice Problems
 
